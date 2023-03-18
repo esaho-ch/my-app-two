@@ -11,12 +11,11 @@ export async function generateStaticParams() {
 
 const Page = async ({ params }) => {
   const { slug } = params;
-  console.log("slug :>> ", slug);
-  const foo = await getTestContent({ slug });
+  const testEntry = await getTestContent({ slug });
 
-  console.log("foo :>> ", foo);
+  console.log("Test entry :>> ", testEntry);
 
-  const { title, description } = foo;
+  const { title, description } = testEntry;
 
   return (
     <div>
