@@ -10,6 +10,7 @@ const Home = async () => {
   return (
     <main className={styles.main}>
       <div className={styles.flexColumn}>
+        <p>jomoz</p>
         {testEntries.map(({ slug, title }) => {
           return (
             <Link key={slug} href={`/${slug}`}>
